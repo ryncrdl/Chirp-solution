@@ -1,0 +1,21 @@
+footer {
+  background: $clr-2;
+  display: flex;
+  align-items: center;
+  padding: 1rem 5rem;
+  justify-content: space-between;
+  h1 {
+    font-style: italic;
+    color: $clr-1;
+    font-size: 1.5rem;
+  }
+  .info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    a {
+      text-decoration: none;
+      color: #000000;
+    }
+  }
+}

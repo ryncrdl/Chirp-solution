@@ -1,0 +1,705 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+header, main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10fr 10fr 1fr;
+      grid-template-columns: 1fr 10fr 10fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 0rem;
+  background: #fbf8f3;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+header h1, main h1 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  color: #1da1f2;
+  font-size: 2rem;
+  font-style: italic;
+  z-index: 5;
+}
+
+header nav, main nav {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  justify-self: flex-end;
+}
+
+header nav ul, main nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li, main nav ul li {
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+header nav ul li:last-child, main nav ul li:last-child {
+  background: #1da1f2;
+  white-space: nowrap;
+  border-radius: 0.3rem;
+}
+
+header nav ul li:last-child:hover, main nav ul li:last-child:hover {
+  background: #0d95e8;
+}
+
+header nav ul li:last-child img, main nav ul li:last-child img {
+  width: 1.2rem;
+}
+
+header nav ul li:last-child a, main nav ul li:last-child a {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+header nav ul a, main nav ul a {
+  color: #4d4d4d;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+header nav ul a:hover, main nav ul a:hover {
+  color: #000000;
+}
+
+header .nav-button, main .nav-button {
+  position: absolute;
+  right: 8%;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: red;
+  display: none;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+main .headline {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+}
+
+main .headline h2 {
+  font-size: 4rem;
+}
+
+main .headline p {
+  color: #666666;
+  margin: 0.8rem 0rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+main .headline button {
+  background: #1da1f2;
+  white-space: nowrap;
+  border-radius: 0.3rem;
+  outline: 0;
+  border: 0;
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+main .headline button img {
+  width: 1.1rem;
+  margin-right: 0.2rem;
+}
+
+main .headline button:hover {
+  background: #0d95e8;
+}
+
+main .headline a {
+  color: #1da1f2;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  background: #1da1f2;
+  white-space: nowrap;
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+  background: #c6e7fc;
+  font-size: 1.1rem;
+}
+
+main .headline .users {
+  margin-left: 1.5rem;
+}
+
+main .headline .users img {
+  margin-left: -1.5rem;
+}
+
+main .headline b {
+  color: #1da1f2;
+}
+
+main .analytics, main .features .smart-analyzer, .features main .smart-analyzer, main .features .schedule, .features main .schedule, main .features .mode, .features main .mode {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  justify-self: flex-end;
+  width: 27rem;
+}
+
+main .analytics-image {
+  height: 41rem;
+  width: 100%;
+  background: url("../Assets/Hero(Deskto).png") no-repeat center center;
+  background-size: 100%;
+}
+
+.features {
+  margin: 5rem 0rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10fr 10fr 1fr;
+      grid-template-columns: 1fr 10fr 10fr 1fr;
+  gap: 2rem;
+}
+
+.features h1 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  font-size: 3rem;
+}
+
+.features h3 {
+  margin: 0.5rem 0rem;
+  font-size: 1.5rem;
+}
+
+.features p {
+  color: #4d4d4d;
+  line-height: 2rem;
+}
+
+.features .analytics, .features .smart-analyzer, .features .schedule, .features .mode {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  border: 0.01rem solid #cccccc;
+  padding: 1rem 1.5rem;
+  border-radius: 0.3rem;
+}
+
+.features .analytics i, .features .smart-analyzer i, .features .schedule i, .features .mode i {
+  font-size: 2.5rem;
+  color: #1da1f2;
+}
+
+.features .smart-analyzer {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+}
+
+.features .mode {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+}
+
+.customer-say {
+  background: #d7f5f5;
+}
+
+.customer-say h1 {
+  font-size: 3rem;
+  padding: 1.5rem 5rem;
+}
+
+.customer-say .customer-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 6fr 6fr 6fr 1fr;
+      grid-template-columns: 1fr 6fr 6fr 6fr 1fr;
+  gap: 2rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 4rem;
+}
+
+.customer-say .customer-list .customer-1, .customer-say .customer-list .customer-2, .customer-say .customer-list .customer-3 {
+  position: relative;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  background: #ffffff;
+  border-radius: 0.3rem;
+  padding: 1.5rem 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3rem auto 2rem;
+      grid-template-columns: 3rem auto 2rem;
+  -ms-grid-rows: 1.5rem 1.5rem auto 1.5rem;
+      grid-template-rows: 1.5rem 1.5rem auto 1.5rem;
+}
+
+.customer-say .customer-list .customer-1 img:nth-child(1), .customer-say .customer-list .customer-2 img:nth-child(1), .customer-say .customer-list .customer-3 img:nth-child(1) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1 / 3;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.customer-say .customer-list .customer-1 .name, .customer-say .customer-list .customer-2 .name, .customer-say .customer-list .customer-3 .name {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  font-weight: 700;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  white-space: nowrap;
+}
+
+.customer-say .customer-list .customer-1 .customer-user, .customer-say .customer-list .customer-2 .customer-user, .customer-say .customer-list .customer-3 .customer-user {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  white-space: nowrap;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 0.8rem;
+  color: #333333;
+}
+
+.customer-say .customer-list .customer-1 .testimonial, .customer-say .customer-list .customer-2 .testimonial, .customer-say .customer-list .customer-3 .testimonial {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1 / 5;
+  padding: 1.5rem 0rem;
+  margin-right: 1rem;
+  line-height: 2rem;
+  color: #4d4d4d;
+}
+
+.customer-say .customer-list .customer-1 .tw-blue, .customer-say .customer-list .customer-2 .tw-blue, .customer-say .customer-list .customer-3 .tw-blue {
+  position: absolute;
+  right: 2rem;
+  top: 2.2rem;
+}
+
+.customer-say .customer-list .customer-1 .like-icon, .customer-say .customer-list .customer-2 .like-icon, .customer-say .customer-list .customer-3 .like-icon {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.customer-say .customer-list .customer-1 .like, .customer-say .customer-list .customer-2 .like, .customer-say .customer-list .customer-3 .like {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  white-space: nowrap;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-left: -1.2rem;
+}
+
+.customer-say .customer-list .customer-1 .date, .customer-say .customer-list .customer-2 .date, .customer-say .customer-list .customer-3 .date {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4 / 5;
+  justify-self: flex-end;
+  white-space: nowrap;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: #4d4d4d;
+  font-weight: 500;
+}
+
+.customer-say .customer-list .customer-2, .customer-say .customer-list .customer-3 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+}
+
+.customer-say .customer-list .customer-3 {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4 / 5;
+}
+
+.price-plan {
+  margin: 4rem auto;
+  width: 30rem;
+}
+
+.price-plan h1 {
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+.price-plan .start {
+  text-align: center;
+  color: #333333;
+  margin: 1rem 0rem;
+}
+
+.price-plan .plan {
+  border: 0.2rem solid #eee2cd;
+  background: #fbf8f3;
+  border-radius: 0.3rem;
+  padding: 2rem 2.5rem;
+}
+
+.price-plan .plan p:nth-child(1) {
+  color: gray;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.price-plan .plan p:nth-child(2) {
+  color: gray;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0.5rem 0rem;
+}
+
+.price-plan .plan p:nth-child(2) span {
+  color: #000000;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.price-plan .plan hr {
+  opacity: 0.8;
+}
+
+.price-plan .plan .offer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.5rem 0rem;
+}
+
+.price-plan .plan .offer p {
+  font-size: 1rem;
+}
+
+.price-plan .plan .offer img {
+  margin-right: 1rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 0.5rem;
+}
+
+.price-plan .plan button {
+  margin-top: 1rem;
+  width: 100%;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #1da1f2;
+  white-space: nowrap;
+  border-radius: 0.3rem;
+  border: none;
+  outline: 0;
+  padding: 1rem;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.2rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.price-plan .plan button img {
+  margin-right: 0.5rem;
+}
+
+.price-plan .plan button:hover {
+  background: #0d95e8;
+}
+
+footer {
+  background: #d7f5f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer h1 {
+  font-style: italic;
+  color: #1da1f2;
+  font-size: 1.5rem;
+}
+
+footer .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+footer .info a {
+  text-decoration: none;
+  color: #000000;
+}
+
+@media only screen and (max-width: 1215px) {
+  main .headline h2 {
+    font-size: 3rem;
+  }
+  .customer-say .customer-list {
+    overflow-x: scroll;
+  }
+  .customer-say .customer-list::-webkit-scrollbar {
+    height: 1rem;
+    background: #e6e6e6;
+  }
+  .customer-say .customer-list::-webkit-scrollbar-track {
+    border-radius: 0.5rem;
+  }
+  .customer-say .customer-list::-webkit-scrollbar-thumb {
+    background: #999999;
+    border-radius: 0.5rem;
+  }
+  .customer-say .customer-list::-webkit-scrollbar-thumb:hover {
+    background: #666666;
+  }
+  .customer-say .customer-list .customer-1, .customer-say .customer-list .customer-2, .customer-say .customer-list .customer-3 {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  main .headline {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-column: 2 / span 3;
+  }
+  main .headline h2 {
+    font-size: 4.5rem;
+  }
+  main .analytics, main .features .smart-analyzer, .features main .smart-analyzer, main .features .schedule, .features main .schedule, main .features .mode, .features main .mode {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2 / 4;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    width: 100%;
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+    padding-bottom: 10rem;
+  }
+  main .analytics-image {
+    background: url("../Assets/Hero(Tablet).png") no-repeat center;
+    background-size: 100% 100%;
+  }
+  .features h1 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2 / 4;
+    width: 70%;
+  }
+  .features .analytics, .features .smart-analyzer, .features .schedule, .features .mode {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+    grid-column: 2 / 4;
+  }
+}
+
+@media only screen and (max-width: 635px) {
+  body {
+    min-width: 400px;
+  }
+  header, main {
+    padding: 0rem 0rem;
+  }
+  header .nav-button, main .nav-button {
+    display: block;
+  }
+  header nav, main nav {
+    overflow: hidden;
+    height: 0rem;
+    position: absolute;
+    grid-column: 1 / -1;
+    visibility: hidden;
+    top: 0rem;
+    left: 0rem;
+    right: 0rem;
+    bottom: 0rem;
+    padding: 0rem 2rem;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    background: #fbf8f3;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  header nav ul, main nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding-top: 4rem;
+  }
+  header nav ul li, main nav ul li {
+    margin-top: 1rem;
+  }
+  header nav ul li:hover, main nav ul li:hover {
+    background: #1da1f2;
+  }
+  header nav ul li:hover a, main nav ul li:hover a {
+    color: #ffffff;
+    display: block;
+  }
+  header nav.show, main nav.show {
+    height: 20rem;
+    visibility: visible;
+  }
+  header nav.show ul, main nav.show ul {
+    z-index: 1;
+  }
+  main .headline h2 {
+    font-size: 2.5rem;
+    margin-top: -10rem;
+  }
+  main .headline button {
+    width: 95%;
+  }
+  main .headline a {
+    display: block;
+    margin-left: 0rem;
+    margin-top: -0.5rem;
+    width: 95%;
+    text-align: center;
+  }
+  main .headline .users {
+    margin-top: 1.5rem;
+  }
+  main .analytics-image {
+    height: 47rem;
+    background: url("../Assets/Hero(Deskto).png") no-repeat;
+    background-size: 100% 90%;
+  }
+  .features h1 {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+  .customer-say h1 {
+    padding: 1.5rem 3rem;
+    font-size: 2rem;
+  }
+  .customer-say .customer-list {
+    -ms-grid-columns: 5% 90% 5%;
+        grid-template-columns: 5% 90% 5%;
+    overflow-x: hidden;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .customer-say .customer-list .customer-1, .customer-say .customer-list .customer-2, .customer-say .customer-list .customer-3 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    width: 100%;
+  }
+  .price-plan {
+    width: 90%;
+  }
+  .price-plan .plan button {
+    font-size: 1.1rem;
+  }
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+/*# sourceMappingURL=main.css.map */

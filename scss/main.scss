@@ -1,0 +1,8 @@
+@import "./config", "./header", "./headline", "./features", "./customersay",
+  "./priceplan", "./footer",'./responsiveness';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-1;
+}

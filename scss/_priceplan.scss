@@ -1,0 +1,72 @@
+.price-plan {
+  margin: 4rem auto;
+  width: 30rem;
+  h1 {
+    font-size: 2.3rem;
+    text-align: center;
+  }
+  .start {
+    text-align: center;
+    color: lighten(#000000, 20%);
+    margin: 1rem 0rem;
+  }
+  .plan {
+    border: 0.2rem solid darken($clr-3, 10%);
+    background: $clr-3;
+    border-radius: $br-radius;
+    padding: 2rem 2.5rem;
+    p:nth-child(1) {
+      color: lighten(#000000, 50%);
+      font-weight: 500;
+      font-size: 1.3rem;
+    }
+    p:nth-child(2) {
+      color: lighten(#000000, 50%);
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin: 0.5rem 0rem;
+      span {
+        color: #000000;
+        font-weight: 900;
+        font-size: 3rem;
+      }
+    }
+    hr {
+      opacity: 0.8;
+    }
+    .offer {
+      display: flex;
+      margin: 0.5rem 0rem;
+      p {
+        font-size: 1rem;
+      }
+      img {
+        margin-right: 1rem;
+        align-self: flex-start;
+        margin-top: 0.5rem;
+      }
+    }
+    button {
+      margin-top: 1rem;
+      width: 100%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include signIn;
+      border: none;
+      outline: 0;
+      padding: 1rem;
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 1.2rem;
+      @include ease;
+      img {
+        margin-right: 0.5rem;
+      }
+      &:hover {
+            background: darken($clr-1, 5%);
+          }
+    }
+  }
+}

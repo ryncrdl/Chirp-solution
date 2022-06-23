@@ -1,0 +1,66 @@
+main {
+  @extend header;
+  position: relative;
+  z-index: 1;
+  .headline {
+    grid-column: 2 / 3;
+    h2 {
+      font-size: 4rem;
+    }
+    p {
+      color: lighten(#000000, 40%);
+      margin: 0.8rem 0rem;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 1.8rem;
+    }
+    button {
+      @include signIn;
+      outline: 0;
+      border: 0;
+      padding: 0.5rem 1rem;
+      color: #ffffff;
+      font-size: 1.1rem;
+      cursor: pointer;
+      margin-bottom: 1rem;
+      img {
+        width: 1.1rem;
+        margin-right: 0.2rem;
+      }
+      @include ease;
+      &:hover {
+        background: darken($clr-1, 5%);
+      }
+    }
+    a {
+      color: $clr-1;
+      text-decoration: none;
+      font-weight: 600;
+      margin-left: 0.5rem;
+      @include signIn;
+      padding: 0.5rem 1rem;
+      background: lighten($clr-1, 35%);
+      font-size: 1.1rem;
+    }
+    .users {
+      margin-left: 1.5rem;
+      img {
+        margin-left: -1.5rem;
+      }
+    }
+    b {
+      color: $clr-1;
+    }
+  }
+  .analytics {
+    grid-column: 3 / 4;
+    justify-self: flex-end;
+    width: 27rem;
+    &-image {
+      height: 41rem;
+      width: 100%;
+      background: url("../Assets/Hero(Deskto).png") no-repeat center center;
+      background-size: 100%;
+    }
+  }
+}

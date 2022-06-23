@@ -1,0 +1,83 @@
+.customer-say {
+  background: $clr-2;
+  h1 {
+    font-size: 3rem;
+    padding: 1.5rem 5rem;
+  }
+  .customer-list {
+    display: grid;
+    grid-template-columns: 1fr 6fr 6fr 6fr 1fr;
+    gap: 2rem;
+    justify-content: space-between;
+    padding-bottom: 4rem;
+    .customer-1 {
+      position: relative;
+      grid-column: 2 / 3;
+      height: min-content;
+      background: #ffffff;
+      border-radius: $br-radius;
+      padding: 1.5rem 2rem;
+      display: grid;
+      grid-template-columns: 3rem auto 2rem;
+      grid-template-rows: 1.5rem 1.5rem auto 1.5rem;
+      img:nth-child(1) {
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+        align-self: flex-end;
+      }
+      .name {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        font-weight: 700;
+        align-self: flex-end;
+        white-space: nowrap;
+      }
+      .customer-user {
+        grid-column: 2 / 3;
+        white-space: nowrap;
+        grid-row: 2 / 3;
+        align-self: center;
+        font-size: 0.8rem;
+        color: lighten(#000000, 20%);
+      }
+      .testimonial {
+        grid-column: 1 / 5;
+        padding: 1.5rem 0rem;
+        margin-right: 1rem;
+        line-height: 2rem;
+        color: lighten(#000000, 30%);
+      }
+      .tw-blue {
+        position: absolute;
+        right: 2rem;
+        top: 2.2rem;
+      }
+      .like-icon {
+        grid-column: 1 / 2;
+        align-self: flex-end;
+      }
+      .like {
+        grid-column: 2 / 3;
+        white-space: nowrap;
+        align-self: flex-end;
+        margin-left: -1.2rem;
+      }
+      .date {
+        grid-column: 4 / 5;
+        justify-self: flex-end;
+        white-space: nowrap;
+        align-self: flex-end;
+        color: lighten(#000000, 30%);
+        font-weight: 500;
+      }
+    }
+    .customer-2 {
+      @extend .customer-1;
+      grid-column: 3 / 4;
+    }
+    .customer-3 {
+      @extend .customer-2;
+      grid-column: 4 / 5;
+    }
+  }
+}

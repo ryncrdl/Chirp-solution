@@ -1,0 +1,39 @@
+.features {
+  margin: 5rem 0rem;
+  display: grid;
+  grid-template-columns: 1fr 10fr 10fr 1fr;
+  gap: 2rem;
+  h1 {
+    grid-column: 2 / 3;
+    font-size: 3rem;
+  }
+  h3 {
+    margin: 0.5rem 0rem;
+    font-size: 1.5rem;
+    }
+  p {
+    color: lighten(#000000, 30%);
+    line-height: 2rem;
+  }
+  .analytics {
+    grid-column: 2 / 3;
+    border: 0.01rem solid lighten(#000000, 80%);
+    padding: 1rem 1.5rem;
+    border-radius: $br-radius;
+    i {
+      font-size: 2.5rem;
+      color: $clr-1;
+    }
+  }
+  .smart-analyzer {
+    @extend .analytics;
+    grid-column: 3 / 4;
+  }
+  .schedule {
+    @extend .analytics;
+  }
+  .mode {
+    @extend .analytics;
+    grid-column: 3 / 4;
+  }
+}

@@ -1,0 +1,68 @@
+header {
+  display: grid;
+  grid-template-columns: 1fr 10fr 10fr 1fr;
+  align-items: center;
+  padding: 3rem 0rem;
+  background: $clr-3;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  @include ease;
+  h1 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    color: $clr-1;
+    font-size: 2rem;
+    font-style: italic;
+    z-index: 5;
+  }
+  nav {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    justify-self: flex-end;
+    ul {
+      display: flex;
+      list-style: none;
+
+      li {
+        padding: 0.5rem 1rem;
+        border-radius: $br-radius;
+        @include ease;
+        &:last-child {
+          @include signIn;
+          &:hover {
+            background: darken($clr-1, 5%);
+          }
+          img {
+            width: 1.2rem;
+          }
+          a {
+            color: #ffffff;
+            font-size: 1.2rem;
+          }
+        }
+      }
+      a {
+        color: lighten(#000000, 30%);
+        text-decoration: none;
+
+        @include ease;
+        &:hover {
+          color: #000000;
+        }
+      }
+    }
+  }
+  .nav-button {
+    position: absolute;
+    right: 8%;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: red;
+    display: none;
+  }
+}
